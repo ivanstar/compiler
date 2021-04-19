@@ -36,16 +36,15 @@ Some identifiers are reserved for use as keywords, and may not be used otherwise
 <Conditional> 	             <Expression> <Relop> <Expression> | <Expression>
 ```
 
-Sample Output
+## Sample Output
 For taking the following as syntax in the text file.
-``
+```
 int num, nu2m, sum;
 num = 0;
 nu2m = 15;
 sum = 0;
 sum = num + nu2m;
-
-``
+```
 
 ```
 This program will take in a file and perform syntatical analysis on the file.
