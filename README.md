@@ -103,4 +103,78 @@ nu2m = 15 ;
 <Identifier> -> id
 <Identifier> -> id
 <Type> -> bool | int | float
+
+sum = 0 ;
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term>
+<Term> -> <Factor>
+<Factor> -> <Num>
+<Num> -> num
+<Identifier> -> id
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term>
+<Term> -> <Factor>
+<Factor> -> <Num>
+<Num> -> num
+<Identifier> -> id
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term>
+<Term> -> <Factor>
+<Factor> -> <Num>
+<Num> -> num
+<Identifier> -> id
+<Statement> -> <Declarative>
+<Declarative> -> <Type> <Identifier> <MoreID> ;
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> empty
+<Identifier> -> id
+<Identifier> -> id
+<Identifier> -> id
+<Type> -> bool | int | float
+
+sum = num + nu2m ;
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term> + <Term>
+<Term> -> <Factor>
+<Factor> -> <Identifier>
+<Identifier> -> id
+<Term> -> <Factor>
+<Factor> -> <Identifier>
+<Identifier> -> id
+<Identifier> -> id
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term>
+<Term> -> <Factor>
+<Factor> -> <Num>
+<Num> -> num
+<Identifier> -> id
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term>
+<Term> -> <Factor>
+<Factor> -> <Num>
+<Num> -> num
+<Identifier> -> id
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term>
+<Term> -> <Factor>
+<Factor> -> <Num>
+<Num> -> num
+<Identifier> -> id
+<Statement> -> <Declarative>
+<Declarative> -> <Type> <Identifier> <MoreID> ;
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> empty
+<Identifier> -> id
+<Identifier> -> id
+<Identifier> -> id
+<Type> -> bool | int | float
 ```
