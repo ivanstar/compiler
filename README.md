@@ -25,7 +25,7 @@ Some identifiers are reserved for use as keywords, and may not be used otherwise
 <Statement>	              <Declarative> | <Assignment> | if ( <Conditional> ) then <Statement> else <Statement> endif | while ( <Conditional> ) do <Statement> whileend
 <Declarative>	              <Type> <ID> <MoreID>; | <Type> <Assignment> 
 <Type>                        int | float | bool
-<ID>	                     id           
+<ID>	                      id           
 <Assignment>	               <ID> = <Expression>;
 <Expression>	              <Term> + <Term> | <Term> - <Term> | <Term>
 <Term>	                      <Factor> * <Factor> | <Factor> / <Factor> | <Factor>
