@@ -35,3 +35,73 @@ Some identifiers are reserved for use as keywords, and may not be used otherwise
 <Relop>	                      < | > | <= | >= | == | !=
 <Conditional> 	             <Expression> <Relop> <Expression> | <Expression>
 ```
+
+Sample Output
+For taking the following as syntax in the text file.
+``
+int num, nu2m, sum;
+num = 0;
+nu2m = 15;
+sum = 0;
+sum = num + nu2m;
+
+``
+
+```
+This program will take in a file and perform syntatical analysis on the file.
+Enter the text file name to perform syntatical analyzer: test.txt
+
+int num , nu2m , sum ;
+<Statement> -> <Declarative>
+<Declarative> -> <Type> <Identifier> <MoreID> ;
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> empty
+<Identifier> -> id
+<Identifier> -> id
+<Identifier> -> id
+<Type> -> bool | int | float
+
+num = 0 ;
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term>
+<Term> -> <Factor>
+<Factor> -> <Num>
+<Num> -> num
+<Identifier> -> id
+<Statement> -> <Declarative>
+<Declarative> -> <Type> <Identifier> <MoreID> ;
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> empty
+<Identifier> -> id
+<Identifier> -> id
+<Identifier> -> id
+<Type> -> bool | int | float
+
+nu2m = 15 ;
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term>
+<Term> -> <Factor>
+<Factor> -> <Num>
+<Num> -> num
+<Identifier> -> id
+<Statment> -> <Assign>
+<Assign> -> <Identifier> = <Expression> ;
+<Expression> -> <Term>
+<Term> -> <Factor>
+<Factor> -> <Num>
+<Num> -> num
+<Identifier> -> id
+<Statement> -> <Declarative>
+<Declarative> -> <Type> <Identifier> <MoreID> ;
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> , <Identifier> <MoreID>
+<MoreID> -> empty
+<Identifier> -> id
+<Identifier> -> id
+<Identifier> -> id
+<Type> -> bool | int | float
+```
