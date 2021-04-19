@@ -23,7 +23,7 @@ Some identifiers are reserved for use as keywords, and may not be used otherwise
 ```
 GRAMMAR	                     RULE
 <Statement>	              <Declarative> | <Assignment> |
-                            if ( <Conditional> ) then <Statement> else <Statement> endif |
+                                   if ( <Conditional> ) then <Statement> else <Statement> endif |
                             while ( <Conditional> ) do <Statement> whileend
 
 <Declarative>	              <Type> <ID> <MoreID>; | <Type> <Assignment>
