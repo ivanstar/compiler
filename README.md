@@ -9,9 +9,7 @@ It will verify if the external file has appropriate syntax and if ther are any s
 The lexical units of a program are identifiers, keywords, integers, reals, operators and other separators. 
 Blanks, tabs and newlines  (collectively, "white space") as described below are ignored except 
 as they serve to separate tokens. 
-Some white space is required to separate otherwise adjacent identifiers, keywords, reals and integers.
-<Identifier> is a sequence of letters and   “#”. 
-The first character must be a letter and two consecutive #s are not allowed. 
+Some white space is required to separate otherwise adjacent identifiers, keywords, reals and integers. 
 Upper and lower cases are same. 
 <Integer>  is an unsigned decimal integer i.e., a sequence of decimal digits.
 <floating> is integer followed by “.”and integer, e.g., 123.00 
