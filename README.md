@@ -28,10 +28,10 @@ Some identifiers are reserved for use as keywords, and may not be used otherwise
 <ID>	                      id           
 <Assignment>	               <ID> = <Expression>;
 <Expression>	              <Term> + <Term> | <Term> - <Term> | <Term>
-<Term>	                     <Factor> * <Factor> | <Factor> / <Factor> | <Factor>
+<Term>	                      <Factor> * <Factor> | <Factor> / <Factor> | <Factor>
 <Factor>	              ( <Expression> ) | <ID> | <Num>
 <Num>	                     number | true(1) | false(0)
 <MoreID>	              , <ID> <MoreID> | empty
-<Relop>	                     < | > | <= | >= | == | !=
-<Conditional> 	              <Expression> <Relop> <Expression> | <Expression>
+<Relop>	                      < | > | <= | >= | == | !=
+<Conditional> 	             <Expression> <Relop> <Expression> | <Expression>
 ```
