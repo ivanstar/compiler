@@ -1,10 +1,10 @@
-# Compiler - lexical-syntax-analyzer
+# Compiler : lexical-syntax-analyzer
 
 This compiler program utilizing Finite State Machines(FSM) and consists of a lexical analyzer, syntactical analyzer, and parser.  All of which takes C++ programming language and translates it into pseudo assembly code. The compiler reads the code from an external file (e.g. text file) and parses its contents from the file and translates it into assembly code.
 
 It will verify if the external file has appropriate syntax and if ther are any syntax errors it will generate an error message. 
 
-Lexical Analyzer Conventions
+#Lexical Analyzer Conventions
 ```
 The lexical units of a program are identifiers, keywords, integers, reals, operators and other separators. 
 Blanks, tabs and newlines  (collectively, "white space") as described below are ignored except 
@@ -19,7 +19,7 @@ Some identifiers are reserved for use as keywords, and may not be used otherwise
        e.g.,  int, if, else, fi,  while, return, read, write  etc
 ```
 
-Syntactical Analyzer Rules
+#Syntactical Analyzer Rules
 ```
 GRAMMAR	              RULE
 <Statement>	              <Declarative> | <Assignment> |
