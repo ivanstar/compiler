@@ -21,12 +21,14 @@ Some identifiers are reserved for use as keywords, and may not be used otherwise
 
 ## Syntactical Analyzer Rules
 ```
-GRAMMAR	                     RULE
+## GRAMMAR	                     ## RULE
 <Statement>	              <Declarative> | <Assignment> | if ( <Conditional> ) then <Statement> else <Statement> endif | while ( <Conditional> ) do <Statement> whileend
 
-<Declarative>	              <Type> <ID> <MoreID>; | <Type> <Assignment>
-                            <Type>	int | float | bool
-                            <ID>	id
+<Declarative>	              <Type> <ID> <MoreID>; | <Type> <Assignment> 
+
+<Type>                      int | float | bool
+
+<ID>	                     id
                      
 <Assignment>	              <ID> = <Expression>;
 
