@@ -26,7 +26,7 @@ Some identifiers are reserved for use as keywords, and may not be used otherwise
 <Declarative>	              <Type> <ID> <MoreID>; | <Type> <Assignment> 
 <Type>                        int | float | bool
 <ID>	                      id           
-<Assignment>	               <ID> = <Expression>;
+<Assignment>	              <ID> = <Expression>;
 <Expression>	              <Term> + <Term> | <Term> - <Term> | <Term>
 <Term>	                      <Factor> * <Factor> | <Factor> / <Factor> | <Factor>
 <Factor>	              ( <Expression> ) | <ID> | <Num>
